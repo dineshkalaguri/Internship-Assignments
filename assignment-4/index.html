@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Professional Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Welcome to My Professional Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h2>My Website, My Vision</h2>
+      <p>I create stunning digital experiences for our clients.</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>ABOUT</h2>
+      <p>I am a passionate developer and designer dedicated to building amazing websites for businesses of all sizes.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>OUR Services</h2>
+      <div class="service-item">
+        <h3>Web Development</h3>
+        <p>We build high-quality, responsive websites that work seamlessly on all devices.</p>
+      </div>
+      <div class="service-item">
+        <h3>Graphic Design</h3>
+        <p>Our design team crafts beautiful visual content to elevate your brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>IMAGE GALLERY</h2>
+      <div class="gallery-grid">
+        <img src="./Images/pexels-cottonbro-3585000.jpg" alt="Sample Image 1">
+        <img src="./Images/pexels-cottonbro-5473955.jpg" alt="Sample Image 2">
+        <img src="./Images/pexels-hiteshchoudhary-340152.jpg" alt="Sample Image 3">
+        <img src="./Images/pexels-padrinan-1591061.jpg" alt="Sample Image 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos" class="section">
+    <div class="container">
+      <h2>VIDEOS</h2>
+      <div class="video-container">
+        <video controls>
+          <source src="./Images/4549682-hd_1920_1080_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls>
+          <source src="./Images/4828605-uhd-4096-2160-25fps_Xf7H289P.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>CONTACT ME</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Your Website | Designed by Dinu@1847</p>
+  </footer>
+</body>
+</html>
