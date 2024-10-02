@@ -1,95 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory Portal</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Professional Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div="container">
-        <h1>Company Directory Portal</h1>
-        <div class="main">
-            <h2>Employee Registration Form</h2>
-            <form action="form">
-                <label for="FullName">Full Name :</label>
-                <input type="text" id="FullName" name="name" required>
-
-                <label for="Email">Email :</label>
-                <input type="email" id="Email" name="email" required>
-
-                <label for="Department">Department :</label>
-                <select>
-                    <option value="IT">IT</option>
-                    <option value="HR">HR</option>
-                    <option value="Finance">Finance</option>
-                    <option value="Marketing">Marketing</option>
-                </select>
-
-                <label for="EmployeeID">Employee ID :</label>
-                <input type="number" id="EmployeeID" name="number" required>
-
-                <label for="profile">Profile Picture URL :</label>
-                <input type="url" id="profile" name="profile" required>
-
-                <button>Register Employeee</button>
-            </form>
-        </div>
-
-        <div class="main2">
-            <h2>Employee List</h2>
-            <ol type="1">
-                <li><a href="#">John Doe - john@example.com</a></li>
-
-                <hr>
-
-                <li><a href="#">Jane Smith - jane@example.com</a></li>
-
-                <hr>
-            </ol>
-        </div>
-
-        <div class="main3">
-            <h2>Employee Details</h2>
-
-            <table border="1px">
-
-            <tr>
-                <th>Name</th>
-                <th>Employee ID</th>
-                <th>Department</th>
-                <th>Profile Picture</th>
-            </tr>
-
-            <tr>
-                <td>John Doe</td>
-                <td>1234</td>
-                <td>IT</td>
-                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFFsStl16P759odx6-2hWHlsEPdLnJd46uw&s" alt=""></td>
-            </tr>
-
-            <tr>
-
-                <td>Jane Smith</td>
-                <td>7890</td>
-                <td>HR</td>
-                <td><img src="https://media.istockphoto.com/id/1354842602/photo/portrait-of-a-young-businesswoman-working-on-a-laptop-in-an-office.jpg?s=612x612&w=0&k=20&c=kfP1g2712RiaxsDriIxFo363ARlaL2D591s-22CnIo8=" alt=""></td>
-
-            </tr>
-            </table>
-
-
-        </div>
-
-        <div class="main4">
-            <h2>Company Location</h2>
-            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=78.355%2C17.315%2C78.675%2C17.545&layer=mapnik" frameborder="0"></iframe>
-
-
-
-
-        </div>
-
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Welcome to My Professional Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h2>My Website, My Vision</h2>
+      <p>I create stunning digital experiences for our clients.</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>ABOUT</h2>
+      <p>I am a passionate developer and designer dedicated to building amazing websites for businesses of all sizes.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>OUR Services</h2>
+      <div class="service-item">
+        <h3>Web Development</h3>
+        <p>We build high-quality, responsive websites that work seamlessly on all devices.</p>
+      </div>
+      <div class="service-item">
+        <h3>Graphic Design</h3>
+        <p>Our design team crafts beautiful visual content to elevate your brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>IMAGE GALLERY</h2>
+      <div class="gallery-grid">
+        <img src="./Images/pexels-cottonbro-3585000.jpg" alt="Sample Image 1">
+        <img src="./Images/pexels-cottonbro-5473955.jpg" alt="Sample Image 2">
+        <img src="./Images/pexels-hiteshchoudhary-340152.jpg" alt="Sample Image 3">
+        <img src="./Images/pexels-padrinan-1591061.jpg" alt="Sample Image 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos" class="section">
+    <div class="container">
+      <h2>VIDEOS</h2>
+      <div class="video-container">
+        <video controls>
+          <source src="./Images/4549682-hd_1920_1080_30fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls>
+          <source src="./Images/4828605-uhd-4096-2160-25fps_Xf7H289P.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>CONTACT ME</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Your Website | Designed by Dinu@1847</p>
+  </footer>
 </body>
 </html>
